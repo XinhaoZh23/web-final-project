@@ -60,27 +60,19 @@ To run this project on your local machine, please follow these steps:
 
 Here is a preview of the website on different devices:
 
-**Desktop View**
-
-*Add your desktop screenshot here. You can drag and drop the image file directly into the GitHub text editor.*
-
-**Mobile View**
-
-*Add your mobile screenshot here.*
-
 ## Responsive Page Showcase
 
-**Large Screen (Nest Hub Max)**
+**Large Screen (Desktop)**
 
-![Large Screen](figure/127.0.0.1_5500_web-final-project_index.html(Nest Hub Max).png)
+![Large Screen](figure/desktop.png)
 
-**Medium Screen (iPad Air)**
+**Medium Screen (Tablet)**
 
-![Medium Screen](figure/127.0.0.1_5500_web-final-project_index.html(iPad Air).png)
+![Medium Screen](figure/tablet.png)
 
-**Small Screen (iPhone SE)**
+**Small Screen (Mobile)**
 
-![Small Screen](figure/127.0.0.1_5500_web-final-project_index.html(iPhone SE).png)
+![Small Screen](figure/mobile.png)
 
 ---
 
