@@ -2,11 +2,175 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xinhao Zhang - Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Hello, World! My site is working!</h1>
+    <header>
+        <nav id="navbar" class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="../figure/PSU.png" alt="PSU Logo" style="height:32px;vertical-align:middle;margin-right:8px;">
+                    Xinhao Zhang
+                </a>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="container text-center">
+                <h1>Xinhao Zhang</h1>
+                <div style="font-size:0.95em;color:#888;">xinhaoz@pdx.edu</div>
+                <p>Ph.D. Student in Computer Science | Machine Learning Researcher</p>
+                <a href="#projects" class="btn">View My Work</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <div class="container text-center">
+                <h2>About Me</h2>
+                <img src="../figure/self.jpg" alt="A photo of Xinhao Zhang" class="img-fluid mb-3" style="max-width:180px; aspect-ratio: 1/1; object-fit: cover; object-position: center 75%;">
+                <p class="mt-3 text-start">
+                    I am a second-year Computer Science Ph.D. student at Portland State University, with a deep passion for machine learning and its real-world applications. My current research focuses on Large Language Models (LLMs) and Retrieval-Augmented Generation (RAG), and I am driven by the goal of becoming a Machine Learning Engineer who pushes the boundaries of how AI can solve practical problems.<br><br>
+                    While my academic background is rooted in research, I possess strong programming skills and am actively seeking to apply them in more application-oriented development. This portfolio is a showcase of my journey in bridging advanced machine learning concepts with hands-on software engineering.
+                </p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <div class="container">
+                <h2 class="text-center">My Technical Skills</h2>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <h3>Machine Learning & NLP</h3>
+                        <ul>
+                            <li>Deep Learning (PyTorch)</li>
+                            <li>Reinforcement Learning</li>
+                            <li>Large Language Models (LLMs)</li>
+                            <li>Natural Language Processing (NLP)</li>
+                            <li>Retrieval-Augmented Generation (RAG) & AI Agent Development</li>
+                            <li>Data Mining</li>
+                            <li>Hugging Face Ecosystem</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <h3>Programming & Web</h3>
+                        <ul>
+                            <li>Python</li>
+                            <li>C++</li>
+                            <li>JavaScript</li>
+                        </ul>
+                        <h3>Software Engineering & Tools</h3>
+                        <ul>
+                            <li>Feature Engineering & Data Preprocessing</li>
+                            <li>Web API Development (Flask)</li>
+                            <li>Version Control (Git & GitHub)</li>
+                            <li>Containerization (Docker)</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-12 mb-4">
+                        <h3>Databases & Systems</h3>
+                        <ul>
+                            <li>SQL</li>
+                            <li>Linux</li>
+                            <li>Git</li>
+                        </ul>
+                        <h3>Data Visualization & Simulation</h3>
+                        <ul>
+                            <li>Python (Matplotlib)</li>
+                            <li>R</li>
+                            <li>SPSS</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <div class="container">
+                <h2 class="text-center mb-4">My Projects</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Titanic Survival Prediction – A Full-Stack ML System</h5>
+                                <p class="card-text">An end-to-end machine learning project to predict Titanic passenger survival. I independently developed a custom neural network with PyTorch, created an ensemble model with Scikit-learn and XGBoost, and built a Flask RESTful API for real-time predictions. The system is containerized with Docker and features a responsive frontend, showcasing my skills in both machine learning and full-stack development.</p>
+                                <div class="mb-2"><strong>Tech Stack:</strong> PyTorch, Scikit-learn, XGBoost, Flask, Docker, Pandas, HTML/CSS, JavaScript</div>
+                                <a href="https://github.com/XinhaoZh23/Titanic-Baseline" class="btn btn-outline-primary btn-sm mt-auto me-auto" target="_blank">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Speed Grader Pro – Desktop Grading Assistant</h5>
+                                <p class="card-text">A practical desktop application built with Python and Tkinter to streamline the grading process. The app features automated score calculation, bonus point handling, and a user-friendly GUI with input validation. It was packaged into a standalone Windows executable using PyInstaller, demonstrating my ability to create useful tools for specific needs.</p>
+                                <div class="mb-2"><strong>Tech Stack:</strong> Python, Tkinter, PyInstaller, GUI Design</div>
+                                <a href="https://github.com/XinhaoZh23/speedgrader" class="btn btn-outline-primary btn-sm mt-auto me-auto" target="_blank">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container">
+                <h2 class="text-center mb-4">Get In Touch</h2>
+                <p class="text-center">Feel free to reach out for collaborations, questions, or just to say hi!</p>
+                <form class="mx-auto" style="max-width:500px;">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" class="form-control" id="subject" name="subject">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- footer 内容将会在后面添加 -->
+    </footer>
+
     <script src="js/script.js"></script>
 </body>
 </html>
