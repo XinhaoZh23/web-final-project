@@ -1,45 +1,47 @@
-# web-final-project
-# Personal Portfolio - Web Development Final Project
+# Personal Portfolio Website
 
-This is my final project for the web development course. It is a fully responsive personal portfolio website built from scratch to showcase my skills, past projects, and professional experience.
+This is a fully responsive personal portfolio website built as the final project for the **CS-563-002: Intro To Web Development** course. The site showcases my professional profile, technical skills, and featured projects, all presented in a clean, modern, and accessible single-page layout.
 
 ---
 
 ## 🚀 Live Demo
 
-The website is deployed and live. You can view it here:
+The website is deployed using GitHub Pages and is available at:
 
 **[https://xinhaozh23.github.io/web-final-project/](https://xinhaozh23.github.io/web-final-project/)**
 
 ---
 
-## ✨ Features
+## ✨ Key Features
 
-*   **Fully Responsive Design:** The layout adapts seamlessly to all screen sizes, from mobile phones to desktop computers.
-*   **Multiple Sections:** The site is organized into clear sections:
-    *   **About Me:** A professional introduction.
-    *   **Skills/Experience:** A showcase of my technical abilities and background.
-    *   **Projects:** A portfolio of my 2-3 best projects with links to GitHub and live demos.
-    *   **Contact:** An interactive contact form for visitors to get in touch.
-*   **Interactive Elements:** JavaScript is used to create an engaging user experience, including smooth scrolling, form validation, and other dynamic features.
-*   **Modern UI:** A clean, professional, and easy-to-navigate user interface.
+*   **Fully Responsive Design:** The layout seamlessly adapts to all screen sizes, from mobile phones to large desktop displays, ensuring an optimal viewing experience for every visitor.
+*   **Dynamic Navigation:** Implements Bootstrap's **Scrollspy** component, which automatically highlights the current section in the navigation bar as the user scrolls. This is paired with a custom JavaScript **smooth scrolling** effect for a fluid and intuitive user experience.
+*   **Dynamic Content with GitHub API:** The "Projects" section dynamically fetches and displays real-time **star and fork counts** for my repositories by making asynchronous calls to the GitHub REST API, showcasing my ability to work with external data sources.
+*   **Client-Side Form Validation:** The contact form includes robust, custom-built validation using JavaScript, providing immediate and user-friendly feedback without relying on native browser validation.
+*   **Accessibility (a11y) Compliant:** The entire site was developed with accessibility in mind, passing automated checks to ensure it is usable by a wide range of audiences.
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠️ Technology Stack
 
-This project is built using fundamental web technologies as required by the course:
+This project was built from the ground up using a modern front-end technology stack:
 
-*   **HTML5:** With a focus on semantic markup for better structure and accessibility.
-*   **CSS3:** Custom styles, using Flexbox and/or Grid for modern, responsive layouts.
-*   **Bootstrap 5:** Utilized for its responsive grid system and pre-built components to speed up development while ensuring a polished look.
-*   **JavaScript (ES6+):** For DOM manipulation, event handling, and implementing all interactive features on the site.
+*   **Core Languages:** HTML5, CSS3, JavaScript (ES6+)
+*   **Framework:** Bootstrap 5 (for grid system, components, and utilities)
+*   **Fonts & Icons:**
+    *   Google Fonts (Merriweather and Open Sans)
+    *   Bootstrap Icons
+*   **APIs:** GitHub REST API
+*   **Development Tools:**
+    *   Git & GitHub for version control
+    *   Prettier for code formatting
+*   **Deployment:** GitHub Pages
 
 ---
 
 ## 💻 Setup and Running Locally
 
-To run this project on your local machine, follow these simple steps:
+To run this project on your local machine, please follow these steps:
 
 1.  **Clone the repository:**
     ```bash
@@ -49,6 +51,45 @@ To run this project on your local machine, follow these simple steps:
     ```bash
     cd web-final-project
     ```
-3.  **Open the `index.html` file in your favorite web browser.** No further installation is required.
+3.  **Open `index.html` in your web browser.**
+    *   No complex build steps or installations are required. The site uses CDN links for all external libraries, so a simple file-opening in a browser is sufficient to run it.
 
+---
 
+## 🖼️ Screenshots
+
+Here is a preview of the website on different devices:
+
+**Desktop View**
+
+*Add your desktop screenshot here. You can drag and drop the image file directly into the GitHub text editor.*
+
+**Mobile View**
+
+*Add your mobile screenshot here.*
+
+## Responsive Page Showcase
+
+**Large Screen (Nest Hub Max)**
+
+![Large Screen](figure/127.0.0.1_5500_web-final-project_index.html(Nest Hub Max).png)
+
+**Medium Screen (iPad Air)**
+
+![Medium Screen](figure/127.0.0.1_5500_web-final-project_index.html(iPad Air).png)
+
+**Small Screen (iPhone SE)**
+
+![Small Screen](figure/127.0.0.1_5500_web-final-project_index.html(iPhone SE).png)
+
+---
+
+## 📚 External Resources
+
+During the development of this project, a number of external resources were consulted for guidance and problem-solving. These include but are not limited to:
+
+*   <https://blog.csdn.net/m0_74249162/article/details/138342161>
+*   <https://blog.csdn.net/qq_63358859/article/details/131547957>
+*   <https://blog.csdn.net/eahba/article/details/145898691>
+*   <https://blog.csdn.net/m0_46612221/article/details/120876111>
+*   <https://blog.csdn.net/a2868221132/article/details/129462602>

@@ -1,132 +1,141 @@
 /* 1. Global Variables */
 :root {
-    --primary-color: #4169E1; /* RoyalBlue */
-    --secondary-color: #f8f9fa; /* Light Gray Background */
-    --text-color: #212529; /* Dark Gray Text */
-    --heading-font: 'Merriweather', serif;
-    --body-font: 'Open Sans', sans-serif;
+  --primary-color: #4169e1; /* RoyalBlue */
+  --secondary-color: #f8f9fa; /* Light Gray Background */
+  --text-color: #212529; /* Dark Gray Text */
+  --heading-font: "Merriweather", serif;
+  --body-font: "Open Sans", sans-serif;
 }
 
 /* 2. Body and Typography */
 body {
-    font-family: var(--body-font);
-    color: var(--text-color);
-    line-height: 1.7;
-    padding-top: 70px;
+  font-family: var(--body-font);
+  color: var(--text-color);
+  line-height: 1.7;
+  padding-top: 70px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--heading-font);
-    font-weight: 700;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  font-weight: 700;
 }
 
 /* 3. Helper/Utility Classes */
 .section-title {
-    margin-bottom: 4rem;
-    position: relative;
+  margin-bottom: 4rem;
+  position: relative;
 }
 
 .section-title::after {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 60px;
-    height: 3px;
-    background: var(--primary-color);
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
+  content: "";
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--primary-color);
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* General section padding */
 section {
-    padding: 80px 0;
-    scroll-margin-top: 61px;
+  padding: 80px 0;
+  scroll-margin-top: 61px;
 }
 
 /* --- Navbar --- */
 #navbar {
-    background-color: rgba(255, 255, 255, 0.9); /* 半透明背景 */
-    backdrop-filter: blur(10px); /* 模糊效果 */
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.9); /* 半透明背景 */
+  backdrop-filter: blur(10px); /* 模糊效果 */
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 #navbar .nav-link {
-    font-weight: 700;
+  font-weight: 700;
 }
-#navbar .nav-link:hover, #navbar .nav-link.active {
-    color: var(--primary-color);
+#navbar .nav-link:hover,
+#navbar .nav-link.active {
+  color: var(--primary-color);
 }
 #navbar .nav-link.active {
-    color: var(--primary-color);
-    font-weight: 700;
+  color: var(--primary-color);
+  font-weight: 700;
 }
 
 /* --- Hero Section --- */
 #hero {
-    min-height: 10vh;
-    padding: 30px 0;
-    background-color: #f4f4f4;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  min-height: 10vh;
+  padding: 30px 0;
+  background-color: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #hero h1 {
-    font-size: 3.5rem;
+  font-size: 3.5rem;
 }
 #hero p {
-    font-size: 1.25rem;
+  font-size: 1.25rem;
 }
 
 /* --- Buttons --- */
 .btn-primary {
-    background-color: var(--primary-color);
-    border-color: var(--primary-color);
-    padding: 12px 30px;
-    font-weight: 700;
-    transition: all 0.3s ease;
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  padding: 12px 30px;
+  font-weight: 700;
+  transition: all 0.3s ease;
 }
 .btn-primary:hover {
-    background-color: #3558c4; /* A slightly darker blue */
-    border-color: #3558c4;
-    transform: translateY(-2px);
+  background-color: #3558c4; /* A slightly darker blue */
+  border-color: #3558c4;
+  transform: translateY(-2px);
 }
 
 /* --- Project Cards --- */
 .card {
-    border: none;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-    transition: all 0.3s ease;
+  border: none;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
 }
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
 }
 
 /* --- Responsive Design --- */
 
 /* For tablets and smaller devices */
 @media (max-width: 992px) {
-    #about .text-center { /* About me section's image */
-        margin-bottom: 30px;
-    }
+  #about .text-center {
+    /* About me section's image */
+    margin-bottom: 30px;
+  }
 }
 
 /* For mobile devices */
 @media (max-width: 768px) {
-    h1, #hero h1 {
-        font-size: 2.5rem;
-    }
-    h2 {
-        font-size: 1.8rem;
-    }
-    p, #hero p {
-        font-size: 1rem;
-    }
-    section {
-        padding: 60px 0;
-    }
-    .section-title {
-        margin-bottom: 3rem;
-    }
+  h1,
+  #hero h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  p,
+  #hero p {
+    font-size: 1rem;
+  }
+  section {
+    padding: 60px 0;
+  }
+  .section-title {
+    margin-bottom: 3rem;
+  }
 }
