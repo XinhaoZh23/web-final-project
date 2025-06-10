@@ -12,6 +12,7 @@ body {
     font-family: var(--body-font);
     color: var(--text-color);
     line-height: 1.7;
+    padding-top: 70px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -40,6 +41,7 @@ h1, h2, h3, h4, h5, h6 {
 /* General section padding */
 section {
     padding: 80px 0;
+    scroll-margin-top: 61px;
 }
 
 /* --- Navbar --- */
@@ -54,6 +56,10 @@ section {
 }
 #navbar .nav-link:hover, #navbar .nav-link.active {
     color: var(--primary-color);
+}
+#navbar .nav-link.active {
+    color: var(--primary-color);
+    font-weight: 700;
 }
 
 /* --- Hero Section --- */
