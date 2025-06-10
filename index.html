@@ -130,7 +130,10 @@
                                 <h5 class="card-title">Titanic Survival Prediction – A Full-Stack ML System</h5>
                                 <p class="card-text">An end-to-end machine learning project to predict Titanic passenger survival. I independently developed a custom neural network with PyTorch, created an ensemble model with Scikit-learn and XGBoost, and built a Flask RESTful API for real-time predictions. The system is containerized with Docker and features a responsive frontend, showcasing my skills in both machine learning and full-stack development.</p>
                                 <div class="mb-2"><strong>Tech Stack:</strong> PyTorch, Scikit-learn, XGBoost, Flask, Docker, Pandas, HTML/CSS, JavaScript</div>
-                                <a href="https://github.com/XinhaoZh23/Titanic-Baseline" class="btn btn-outline-primary btn-sm mt-auto me-auto" target="_blank">GitHub</a>
+                                <div class="mt-auto">
+                                    <a href="https://github.com/XinhaoZh23/Titanic-Baseline" class="btn btn-outline-primary btn-sm mt-auto me-auto" target="_blank">GitHub</a>
+                                    <div class="repo-stats mt-2" data-repo="XinhaoZh23/Titanic-Baseline"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -140,7 +143,10 @@
                                 <h5 class="card-title">Speed Grader Pro – Desktop Grading Assistant</h5>
                                 <p class="card-text">A practical desktop application built with Python and Tkinter to streamline the grading process. The app features automated score calculation, bonus point handling, and a user-friendly GUI with input validation. It was packaged into a standalone Windows executable using PyInstaller, demonstrating my ability to create useful tools for specific needs.</p>
                                 <div class="mb-2"><strong>Tech Stack:</strong> Python, Tkinter, PyInstaller, GUI Design</div>
-                                <a href="https://github.com/XinhaoZh23/speedgrader" class="btn btn-outline-primary btn-sm mt-auto me-auto" target="_blank">GitHub</a>
+                                <div class="mt-auto">
+                                    <a href="https://github.com/XinhaoZh23/speedgrader" class="btn btn-outline-primary btn-sm mt-auto me-auto" target="_blank">GitHub</a>
+                                    <div class="repo-stats mt-2" data-repo="XinhaoZh23/speedgrader"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -153,23 +159,23 @@
             <div class="container">
                 <h2 class="section-title text-center">Get In Touch</h2>
                 <p class="text-center">Feel free to reach out for collaborations, questions, or just to say hi!</p>
-                <form class="mx-auto" style="max-width:500px;">
+                <form id="contact-form" class="mx-auto" style="max-width:500px;">
                     <div class="mb-3">
-                        <label for="name" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="name" name="name" required>
+                        <label for="name" class="form-label">Your Name</label>
+                        <input type="text" class="form-control" id="form-name">
+                        <div class="invalid-feedback"></div>
                     </div>
                     <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" name="email" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="subject" class="form-label">Subject</label>
-                        <input type="text" class="form-control" id="subject" name="subject">
+                        <label for="email" class="form-label">Your Email</label>
+                        <input type="email" class="form-control" id="form-email">
+                        <div class="invalid-feedback"></div>
                     </div>
                     <div class="mb-3">
                         <label for="message" class="form-label">Message</label>
-                        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                        <textarea class="form-control" id="form-message" rows="5"></textarea>
+                        <div class="invalid-feedback"></div>
                     </div>
+                    <div id="form-success-message" class="alert alert-success d-none">Your message has been sent successfully!</div>
                     <button type="submit" class="btn btn-primary w-100">Send Message</button>
                 </form>
             </div>
